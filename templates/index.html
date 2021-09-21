@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: pink;">
+
+<head>
+    <title>INDEX</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+    </style>
+    <link rel="icon" type="image/ico" href="../static/favicon.ico">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire|neon|outline">
+</head>
+
+<body>
+    <header style="font-family: 'Dancing Script', cursive;">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="/Sheva">Bio</a></li>
+            <li><a href="/changepwd">Change Password</a></li>
+            <li><a href="/uploadAvatar">Change Avatar</a></li>
+        </ul>
+        <form action="/logout" method="POST">
+            <input type="submit" value="Log Out" id="Log_out">
+        </form>
+    </header>
+    <br>
+    <br>
+    <div id="modal-plain" class="modal">
+        <span id="close-button" class="close">&times;</span>
+        <img src="" class="modal-content" id="modal-img">
+    </div>
+
+    <div id="thuVienAnh">
+        <div class="Anh">
+            <img class="zoom" src="../static/Anh/shev1.jpg" alt="shev1" title="Shevchenko">
+        </div>
+        <div class="Anh">
+            <img class="zoom" src="../static/Anh/shev2.jpg" alt="shev2" title="Shevchenko">
+        </div>
+        <div class="Anh">
+            <img class="zoom" src="../static/Anh/shev3.jpeg" alt="shev3" title="Shevchenko">
+        </div>
+        <div class="Anh">
+            <img class="zoom" src="../static/Anh/shev4.jpg" alt="shev4" title="Shevchenko">
+        </div>
+        <div class="Anh">
+            <img class="zoom" src="../static/Anh/shev5.jpg" alt="shev5" title="Shevchenko">
+        </div>
+        <div class="Anh">
+            <img class="zoom" src="../static/Anh/shev6.jpg" alt="shev6" title="Shevchenko">
+        </div>
+        <div class="Anh">
+            <img class="zoom" src="../static/Anh/shev7.jpg" alt="shev7" title="Shevchenko">
+        </div>
+        <div class="Anh">
+            <img class="zoom" src="../static/Anh/shev8.jpg" alt="shev8" title="Shevchenko">
+        </div>
+    </div>
+
+    <div class="zoom"></div>
+
+    <hr>
+    <footer id="Contact">
+        <a href="#top">
+            <p style="text-align: right; font-family: 'Dancing Script', cursive;">Return to top</p>
+        </a>
+        <address style="text-align: right; color:snow; font-family: 'Sofia', sans-serif; font-size: 20px;" class="font-effect-outline">
+                Written by Nguyen Thanh Trung.<br>
+                Email: trung24499@gmail.com<br>
+                Home: Vyazemski, 5/7
+        </address>
+    </footer>
+    <script src="../static/script.js"></script>
+</body>
+
+</html>

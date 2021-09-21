@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shevchenko</title>
+    <style>
+        * {
+            font-family: cursive;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+        th,
+        td {
+            padding: 5px;
+            text-align: left;
+        }
+        
+        #tb1 {
+            width: 100%;
+        }
+        
+        #tb1 tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        #tb1 tr:hover {
+            background-color: #ddd;
+        }
+        
+        #tb1 th {
+            background-color: #04AA6D;
+            color: white;
+        }
+        
+        a:link {
+            color: red;
+        }
+        /* visited link */
+        
+        a:visited {
+            color: green;
+        }
+        
+        a:hover {
+            text-shadow: 3px 3px 3px #ababab;
+            color: powderblue;
+            font-size: 20px;
+        }
+        /* selected link */
+        
+        a:active {
+            color: blue;
+            cursor: progress;
+        }
+    </style>
+    <link rel="icon" type="image/ico" href="../static/favicon.ico">
+</head>
+
+<body>
+    <h1 style="text-align: center;">Andriy Shevchenko</h1>
+    <div>
+        <table id="tb1">
+            <tr>
+                <th>Name</th>
+                <td>Andriy Shevchenko</td>
+            </tr>
+            <tr>
+                <th>D.O.B</th>
+                <td>29/09/1976</td>
+            </tr>
+            <tr>
+                <th>Country</th>
+                <td>Ukraine</td>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td>1.83m</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <a href="/">Go back</a>
+    </div>
+</body>
+
+</html>

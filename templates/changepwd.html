@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHANGE PASSWORD</title>
+    <link rel="stylesheet" href="../static/login.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+    </style>
+    <link rel="icon" type="image/ico" href="../static/favicon.ico">
+</head>
+
+<body>
+    <h1>Please input your information!</h1>
+    {% with messages = get_flashed_messages() %} {% if messages %}
+    <ul style="color: red;">
+        {% for message in messages %}
+        <li>{{message}}</li>
+        {% endfor %}
+    </ul>
+    {% endif %} {% endwith %}
+    <form action="/changepwd" method="post">
+        <label for="old_pwd">Old password</label>
+        <input type="password" name="old_pwd" placeholder="123456" required>
+        <br>
+        <label for="new_pwd">New password</label>
+        <input type="password" name="new_pwd" placeholder="123456" required>
+        <br>
+        <label for="new_pwd_confirm">Confirm new password</label>
+        <input type="password" name="new_pwd_confirm" placeholder="123456" required>
+        <input type="submit" value="Update" id="nut">
+    </form>
+    <span>Go back to <a href="/">Home</a></span>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+/* index.html */
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    max-height: 16px;
+}
+
+#thuVienAnh {
+    margin: auto;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Anh {
+    margin: 10px;
+    flex-basis: 270px;
+    flex-grow: 1;
+}
+
+img {
+    max-width: 100%;
+    min-height: 100%;
+    border-radius: 15px;
+}
+
+.Anh:hover img {
+    filter: opacity(80%);
+    cursor: pointer;
+}
+
+
+/* sheva.html */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+li a:hover {
+    background-color: green;
+    /*Co cai nay thi khong can cai duoi (box-shadow)*/
+    box-shadow: 0px 0px 15px greenyellow;
+}
+
+.zoom {
+    transition: transform 0.4s, filter 0.4s ease-in-out;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+
+/* Modal part */
+
+.modal {
+    display: none;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content (Image) */
+
+.modal-content {
+    margin: auto;
+    display: block;
+    min-width: 80%;
+    max-width: 80%;
+    min-height: 80%;
+    max-height: 80%;
+}
+
+
+/* Add Animation - Zoom in the Modal */
+
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+
+/* The Close Button */
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+button {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: coral;
+    color: snow;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#Log_out {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: coral;
+    color: snow;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
